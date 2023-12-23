@@ -1,3 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
 body {
   font-size: 56px;
   font-family: 'Roboto', sans-serif;
@@ -12,6 +30,7 @@ body {
 .page-header {
   background-color: #ffffff;
   font-size: 56px;
+  min-height: 15vh;
 }
 .page-nav .link {
   font-size: 16px;
@@ -99,6 +118,14 @@ body {
   background-color: #404bbf;
 }
 
+.container {
+  max-width: 1158px;
+  padding-left: 156px;
+  padding-right: 156px;
+  margin-left: 72px;
+  margin-right: 72px;
+}
+
 .heading-second {
   font-size: 36px;
   font-weight: 700;
@@ -123,6 +150,17 @@ body {
   letter-spacing: 0.32px;
   text-align: center;
 }
+
+.section-features .heading-second {
+  display: hidden;
+}
+
+.section-features .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+}
+
 .section-team {
   background-color: #f4f4fd;
 }
@@ -131,8 +169,13 @@ body {
   background-color: #ffffff;
 }
 
+.section-team .team-list {
+  display: flex;
+  flex-direction: row;
+}
+
 .section-portfolio {
-  background-color: #f4f4fd;
+  background-color: #ffffff;
 }
 
 .portfolio-list {
@@ -146,6 +189,7 @@ body {
 
 .page-footer {
   background-color: #2e2f42;
+  min-height: 15vh;
 }
 
 .page-footer .logo {
@@ -158,4 +202,6 @@ body {
 
 .page-footer .paragraf {
   color: #f4f4fd;
+  text-align: left;
+  padding: 140 1020 100 156;
 }
