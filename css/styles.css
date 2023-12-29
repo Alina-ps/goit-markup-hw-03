@@ -14,12 +14,13 @@ p {
 ul {
   margin: 0;
   padding-left: 0;
+  list-style-type: none;
 }
 
 body {
   font-size: 56px;
   font-family: 'Roboto', sans-serif;
-  text-align: center;
+  /* text-align: center; */
   line-height: 1.07;
   letter-spacing: 1.12px;
   color: #434455;
@@ -27,24 +28,50 @@ body {
   background-color: #ffffff;
 }
 
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .container {
   max-width: 1158px;
   width: 100%;
-  padding-left: 156px;
-  padding-right: 156px;
-  margin-left: 72px;
-  margin-right: 72px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 156px;
+  margin-right: 156px;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.img {
+  display: block;
+}
+
+/* .............page header................ */
 
 .page-header {
   background-color: #ffffff;
   font-size: 56px;
   min-height: 15vh;
+  width: 1440px;
+  text-align: center;
 }
 
 .page-header .container {
   display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 .page-nav {
@@ -66,6 +93,15 @@ body {
   color: #404bbf;
 }
 
+.container-list {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
+  margin-right: 336px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .logo {
   color: #4d5ae5;
   text-transform: uppercase;
@@ -75,6 +111,8 @@ body {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.54px;
+  margin-top: 25.5px;
+  margin-bottom: 25.5px;
 }
 
 .studio-logo {
@@ -86,14 +124,16 @@ body {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  margin-top: 25.5px;
+  margin-bottom: 25.5px;
 }
 
-.list {
-  list-style-type: none;
-}
-
-.page-address {
+.page-address .list {
   font-style: normal;
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .page-address .link {
   color: #434455;
@@ -110,11 +150,20 @@ body {
   color: #404bbf;
 }
 
+/* ..................................... */
+
+/* .............page title................ */
+
 .page-title {
   color: #ffffff;
   background-color: #2e2f42;
   font-weight: 700;
   font-size: 56px;
+  width: 1440px;
+}
+
+.page-title .container {
+  padding: 68px 316px;
 }
 
 .heading-first {
@@ -122,17 +171,26 @@ body {
   font-weight: 700;
   font-size: 56px;
   text-align: center;
+  width: 496px;
+  height: 120px;
 }
 
 .page-button {
   color: #ffffff;
   background-color: #4d5ae5;
+  text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
+  margin-left: 160px;
+  margin-right: 160px;
+  max-width: 169px;
+  padding: 16px 32px;
+  margin-top: 48px;
 }
+
 .page-button:hover,
 .page-button:focus {
   background-color: #404bbf;
@@ -160,65 +218,139 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  text-align: center;
 }
+/* ..................................... */
 
-.section-features .heading-second {
-  display: hidden;
-}
+/* .............section features................ */
 
 .section-features .list {
   display: flex;
   flex-direction: row;
-  justify-content: baseline;
+  align-items: baseline;
+  gap: 24px;
+  text-align: left;
+  max-width: calc((100% - 3 * 24px) / 4);
 }
 
-.section-team {
+.section-features .paragraf {
+  text-align: left;
+  width: 264px;
+  height: 72px;
+  margin-top: 8px;
+}
+/* ..................................... */
+
+/* .............section team................ */
+
+.section-team .container {
   background-color: #f4f4fd;
+  margin: 0;
+  padding: 120px 156px;
+  max-width: 1440px;
+  text-align: center;
+}
+
+.section-team .heading-second {
+  margin-bottom: 72px;
+  height: 40px;
+  text-align: center;
 }
 
 .team-list {
   background-color: #ffffff;
 }
 
-.section-team .team-list {
+.section-team .heading-third {
+  margin-bottom: 8px;
+  margin-top: 32px;
+}
+
+.section-team .list {
   display: flex;
   flex-direction: row;
-  justify-content: baseline;
-  width: 264px;
-  height: 260px;
+  /* justify-content: center; */
+  gap: 24px;
+  max-width: calc((100% - 3 * 24px) / 4);
 }
+
+.container-team-list {
+  padding-bottom: 32px;
+}
+/* ..................................... */
+
+/* .............section portfolio................ */
 
 .section-portfolio {
   background-color: #ffffff;
+  padding-top: 0;
+  padding-bottom: 120px;
 }
 
-.portfolio-list {
+.section-portfolio .container-portfolio-content {
+  margin-left: 16px;
+  margin-right: 16px;
+  text-align: left;
+}
+
+.section-portfolio .heading-second {
+  margin-bottom: 72px;
   text-align: center;
-  list-style-type: none;
+}
+
+.section-portfolio .portfolio-list {
   display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 48px 24px;
 }
 
 .list-img {
   background-color: #ffffff;
+  border: 1px solid #e7e9fc;
+  width: 360px;
+  height: 420px;
 }
+
+.section-portfolio .heading-third {
+  margin-bottom: 8px;
+  margin-top: 32px;
+}
+
+.section-portfolio .paragraf {
+  margin-bottom: 32px;
+}
+/* ..................................... */
+
+/* .............page footer................ */
 
 .page-footer {
   background-color: #2e2f42;
   min-height: 15vh;
+  width: 1440px;
+}
+
+.page-footer .container {
+  padding: 101.5px 1020px 100px 0;
+  text-align: left;
 }
 
 .page-footer .logo {
   color: #4d5ae5;
+  margin: 14.5px;
+  text-align: left;
 }
 
 .page-footer .studio-logo {
   color: #f4f4fd;
+  text-align: left;
 }
 
 .page-footer .paragraf {
   color: #f4f4fd;
   text-align: left;
-  padding: 140 1020 100 156;
+  width: 264px;
+  height: 72px;
 }
+
+/* ..................................... */
