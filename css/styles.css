@@ -27,11 +27,31 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  max-width: 1158px;
+  width: 100%;
+  padding-left: 156px;
+  padding-right: 156px;
+  margin-left: 72px;
+  margin-right: 72px;
+}
+
 .page-header {
   background-color: #ffffff;
   font-size: 56px;
   min-height: 15vh;
 }
+
+.page-header .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-nav {
+  display: flex;
+  flex-direction: row;
+}
+
 .page-nav .link {
   font-size: 16px;
   font-weight: 500;
@@ -118,14 +138,6 @@ body {
   background-color: #404bbf;
 }
 
-.container {
-  max-width: 1158px;
-  padding-left: 156px;
-  padding-right: 156px;
-  margin-left: 72px;
-  margin-right: 72px;
-}
-
 .heading-second {
   font-size: 36px;
   font-weight: 700;
@@ -172,6 +184,9 @@ body {
 .section-team .team-list {
   display: flex;
   flex-direction: row;
+  justify-content: baseline;
+  width: 264px;
+  height: 260px;
 }
 
 .section-portfolio {
@@ -181,6 +196,8 @@ body {
 .portfolio-list {
   text-align: center;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .list-img {
