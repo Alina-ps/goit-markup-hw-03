@@ -241,11 +241,27 @@ img {
   align-items: baseline;
   gap: 24px;
   text-align: left;
+}
+
+.section-features .list-item {
   width: calc((100% - 3 * 24px) / 4);
 }
 
 .section-features .heading-second {
   margin-bottom: 8px;
+}
+
+.section-features .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  /* margin: -1px; */
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section-features .paragraf {
@@ -274,6 +290,8 @@ img {
 
 .team-list {
   background-color: #ffffff;
+  calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .section-team .heading-third {
@@ -284,13 +302,12 @@ img {
 .section-team .list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 24px;
-  width: calc((100% - 3 * 24px) / 4);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .container-team-list {
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 /* ..................................... */
 
@@ -307,6 +324,7 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   text-align: left;
+  border-top: none;
 }
 
 .section-portfolio .heading-second {
@@ -320,14 +338,14 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   gap: 48px 24px;
-  width: calc((100% - 48px) / 3);
 }
 
-.list-img {
+.section-portfolio .list-img {
   background-color: #ffffff;
   border: 1px solid #e7e9fc;
   width: 360px;
   height: 420px;
+  width: calc((100% - 48px) / 3);
 }
 
 .section-portfolio .heading-third {
