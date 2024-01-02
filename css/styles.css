@@ -41,7 +41,7 @@ section {
   margin-right: 156px;
 }
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -52,7 +52,7 @@ section {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 img {
   display: block;
@@ -106,14 +106,6 @@ img {
 .page-nav .link:focus {
   color: #404bbf;
 }
-
-/* .container-list {
-  display: flex;
-  gap: 40px;
-  margin-right: 336px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-} */
 
 .logo {
   color: #4d5ae5;
@@ -256,15 +248,11 @@ img {
   width: calc((100% - 3 * 24px) / 4);
 }
 
-.section-features .heading-second {
-  margin-bottom: 8px;
-}
-
 .section-features .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
-  /* margin: -1px; */
+  margin: -1px;
   border: 0;
   padding: 0;
   white-space: nowrap;
@@ -273,11 +261,14 @@ img {
   overflow: hidden;
 }
 
+.section-features .heading-third {
+  margin-bottom: 8px;
+}
+
 .section-features .paragraf {
   text-align: left;
   width: 264px;
   height: 72px;
-  margin-top: 8px;
 }
 /* ..................................... */
 
