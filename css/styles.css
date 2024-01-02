@@ -20,7 +20,6 @@ ul {
 body {
   font-size: 56px;
   font-family: 'Roboto', sans-serif;
-  /* text-align: center; */
   line-height: 1.07;
   letter-spacing: 1.12px;
   color: #434455;
@@ -85,6 +84,14 @@ img {
   gap: 40px;
 }
 
+.page-nav .list {
+  display: flex;
+  gap: 40px;
+  margin-right: 292px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .page-nav .link {
   font-size: 16px;
   font-weight: 500;
@@ -100,13 +107,13 @@ img {
   color: #404bbf;
 }
 
-.container-list {
+/* .container-list {
   display: flex;
   gap: 40px;
   margin-right: 336px;
   padding-top: 24px;
   padding-bottom: 24px;
-}
+} */
 
 .logo {
   color: #4d5ae5;
@@ -133,6 +140,7 @@ img {
   text-transform: uppercase;
   margin-top: 25.5px;
   margin-bottom: 25.5px;
+  margin-right: 76px;
 }
 
 .page-address .list {
@@ -141,6 +149,7 @@ img {
   gap: 40px;
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-left: 0;
 }
 .page-address .link {
   color: #434455;
@@ -290,7 +299,7 @@ img {
 
 .team-list {
   background-color: #ffffff;
-  calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 
