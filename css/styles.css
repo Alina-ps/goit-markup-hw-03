@@ -82,6 +82,7 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 40px;
 }
 
 .page-nav .link {
@@ -91,6 +92,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.32px;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .page-nav .link:hover,
@@ -165,6 +167,7 @@ img {
   font-weight: 700;
   font-size: 56px;
   width: 1440px;
+  padding: 188px 0;
 }
 
 .page-title .container {
@@ -281,7 +284,6 @@ img {
 .section-team .list {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   gap: 24px;
   width: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
@@ -310,6 +312,7 @@ img {
 .section-portfolio .heading-second {
   margin-bottom: 72px;
   text-align: center;
+  border-top: none;
 }
 
 .section-portfolio .portfolio-list {
