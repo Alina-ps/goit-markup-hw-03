@@ -41,19 +41,6 @@ section {
   margin-right: 156px;
 }
 
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
-
 img {
   display: block;
   width: 100%;
@@ -338,16 +325,13 @@ img {
 }
 
 .section-portfolio .list-img {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
   background-color: #ffffff;
   height: 420px;
   width: calc((100% - 48px) / 3);
 }
-
-/* .section-portfolio .container-portfolio-img {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-} */
 
 .section-portfolio .container-portfolio-content {
   padding: 32px 16px;
@@ -376,7 +360,6 @@ img {
 
 .page-footer .logo {
   color: #4d5ae5;
-  /* margin: 14.5px; */
   text-align: left;
   display: inline-block;
   margin-bottom: 16px;
