@@ -280,18 +280,10 @@ img {
   text-align: center;
 }
 
-.section-team .container {
-}
-
 .section-team .heading-second {
   margin-bottom: 72px;
   height: 40px;
   text-align: center;
-}
-
-.section-team .heading-third {
-  margin-bottom: 8px;
-  margin-top: 32px;
 }
 
 .section-team .list {
@@ -310,8 +302,21 @@ img {
 .container-team-list {
   display: flex;
   flex-direction: column;
-  padding-bottom: 32px;
 }
+
+.container-team-content {
+  padding: 32px 0;
+}
+
+.container-team-content .heading-third {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.container-team-content .paragraf {
+  text-align: center;
+}
+
 /* ..................................... */
 
 /* .............section portfolio................ */
@@ -347,12 +352,12 @@ img {
   display: flex;
   flex-direction: column;
   text-align: left;
-  border-top: none;
 }
 
 .section-portfolio .container-portfolio-content {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .section-portfolio .heading-third {
